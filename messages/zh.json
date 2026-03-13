@@ -1091,6 +1091,16 @@
   "settings_site_field_transition_duration": "过渡时长 ms",
   "settings_site_field_transition_duration_hint": "只影响默认主题背景层的淡入淡出速度，主要用于首页背景切换；不影响路由级页面切换动画。",
   "settings_site_field_avatar": "头像",
+  "settings_site_validation_too_long": [
+    {
+      "declarations": ["input max"],
+      "match": {
+        "max=*": "最长{max}字"
+      }
+    }
+  ],
+  "settings_site_validation_invalid_url": "请输入有效的 URL",
+  "settings_site_validation_invalid_email": "请输入有效的邮箱地址",
   "settings_site_validation_invalid_asset_ref": "请输入以 / 开头的站内资源路径",
   "settings_site_validation_invalid_asset_path": "请输入以 / 开头的站内资源路径",
   "settings_site_validation_opacity_range": "取值范围应在 0 到 0.4 之间",

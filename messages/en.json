@@ -1098,6 +1098,16 @@
   "settings_site_field_transition_duration": "Transition Duration ms",
   "settings_site_field_transition_duration_hint": "Only affects the default theme background layer fade, mainly for homepage background switching. It does not control router-level page transitions.",
   "settings_site_field_avatar": "Avatar",
+  "settings_site_validation_too_long": [
+    {
+      "declarations": ["input max"],
+      "match": {
+        "max=*": "Maximum {max} characters"
+      }
+    }
+  ],
+  "settings_site_validation_invalid_url": "Please enter a valid URL",
+  "settings_site_validation_invalid_email": "Please enter a valid email address",
   "settings_site_validation_invalid_asset_ref": "Please enter a root-relative site asset path",
   "settings_site_validation_invalid_asset_path": "Please enter a root-relative site asset path",
   "settings_site_validation_opacity_range": "Value must be between 0 and 0.4",

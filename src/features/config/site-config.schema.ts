@@ -16,7 +16,7 @@ function createSiteTextFormSchema(max: number, messages: Messages) {
   return z
     .string()
     .trim()
-    .max(max, messages.friend_link_validation_too_long({ max }));
+    .max(max, messages.settings_site_validation_too_long({ max }));
 }
 
 function createUrlSchema() {
@@ -25,7 +25,7 @@ function createUrlSchema() {
 
 function createUrlFormSchema(messages: Messages) {
   return z.union([
-    z.url(messages.friend_link_validation_invalid_url()),
+    z.url(messages.settings_site_validation_invalid_url()),
     z.literal(""),
   ]);
 }
@@ -36,7 +36,7 @@ function createEmailSchema() {
 
 function createEmailFormSchema(messages: Messages) {
   return z.union([
-    z.email(messages.friend_link_validation_invalid_email()),
+    z.email(messages.settings_site_validation_invalid_email()),
     z.literal(""),
   ]);
 }
