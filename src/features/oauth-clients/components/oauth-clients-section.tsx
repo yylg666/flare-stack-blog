@@ -230,14 +230,6 @@ function OAuthConnectionCard({
                   {formatDate(connection.createdAt, { includeTime: true })}
                 </span>
               </div>
-              <div className="flex justify-between">
-                <span className="text-muted-foreground">
-                  {m.settings_mcp_connection_activity_label()}
-                </span>
-                <span className="font-mono text-muted-foreground/80">
-                  {formatDate(connection.updatedAt, { includeTime: true })}
-                </span>
-              </div>
             </div>
           </div>
 

@@ -46,7 +46,10 @@ export async function listOAuthConnectionsByUserId(db: DB, userId: string) {
     const client = clientsById.get(normalizedConsent.clientId);
 
     return OAuthConnectionSchema.parse({
-      ...normalizedConsent,
+      consentId: normalizedConsent.consentId,
+      clientId: normalizedConsent.clientId,
+      createdAt: normalizedConsent.createdAt,
+      scopes: normalizedConsent.scopes,
       clientName: client?.clientName ?? null,
       clientIcon: client?.clientIcon ?? null,
       clientType: client?.clientType ?? null,
