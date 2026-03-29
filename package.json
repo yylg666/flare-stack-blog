@@ -15,6 +15,7 @@
     "deploy": "bun db:migrate && wrangler deploy",
     "serve": "vite preview",
     "test": "vitest run",
+    "test:node": "vitest run --config vitest.node.config.ts",
     "lint": "biome lint",
     "lint:fix": "biome check --write",
     "format": "biome format --write",
